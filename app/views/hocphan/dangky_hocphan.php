@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $row = $result->fetch_assoc();
     $ma_dk = $row["MaDK"];
-
+    //lay gtri
 
     $sqlInsertCT = "INSERT INTO ChiTietDangKy (MaDK, MaHP) VALUES ('$ma_dk', '$ma_hp')";
 
@@ -44,5 +44,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Đăng ký</button>
 </form>
 
-<a href="../../index.html">Quay lại</a>
+<a href="/project/KTGK/app/views/sinhvien/danh_sach.php">Quay lại</a>
 <?php include '../layouts/footer.php'; ?>
